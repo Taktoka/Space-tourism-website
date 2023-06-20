@@ -18,7 +18,7 @@
 ### Links
 
 - Solution URL: [https://github.com/Taktoka/Space-tourism-website.git](https://github.com/Taktoka/Space-tourism-website.git)
-- Live Site URL: [https://shooping-cart-one.vercel.app/](https://shooping-cart-one.vercel.app/)
+- Live Site URL: [https://space-tourism-website-dusky.vercel.app/](https://space-tourism-website-dusky.vercel.app/)
 
 ## My process
 
