@@ -1,12 +1,13 @@
 .crew {
   background-image: url("/public/images/background-crew-desktop.jpg");
   min-height: 100vh;
-  background-position: center;
+  background-size: cover;
 }
 .crew .contents {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  padding: 0 30px;
 }
 .crew .info {
   display: flex;
@@ -56,17 +57,11 @@
   background-color: #fff;
 }
 .crew .crew.image {
-  position: relative;
+  width: 400px;
 }
 
 .crew .crew-image img {
-  padding-bottom: 10px;
-  position: absolute;
   max-width: 100%;
-  max-height: 400px;
-  top: 190px;
-  left: 55%;
-  padding-bottom: 0;
   animation: opacity 1s linear 1;
 }
 
@@ -87,16 +82,12 @@
   .crew .contents {
     flex-direction: column;
     justify-content: flex-start;
-    height: 600px;
   }
   .crew .title {
     font-size: 25px;
   }
-  .crew .crew-image img {
-    top: 50%;
-    left: 50%;
-    max-height: 330px;
-    transform: translate(-50%, 69%);
+  .crew .crew-image {
+    width: 300px;
   }
   .crew .info .bio {
     text-align: center;
@@ -118,9 +109,8 @@
 }
 
 @media (max-width: 767px) {
-  .crew .crew-image img {
-    max-height: 300px;
-    transform: translate(-50%, 72%);
+  .crew .crew-image {
+    width: 250px;
   }
 
   .crew .title {
@@ -138,4 +128,11 @@
   }
 }
 @media (max-width: 559px) {
+  .crew .info .bio {
+    width: 272px;
+    margin-bottom: 52px;
+  }
+  .crew .info .role {
+    font-size: 13px;
+  }
 }

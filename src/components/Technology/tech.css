@@ -159,3 +159,12 @@
     width: 350px;
   }
 }
+
+@media (max-width: 559px) {
+  .tech .info .technology-name {
+    font-size: 30px;
+  }
+  .tech .info .description {
+    width: 300px;
+  }
+}
