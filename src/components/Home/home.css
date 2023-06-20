@@ -2,7 +2,7 @@
   background-image: url("/public/images/background-home-desktop.jpg");
   background-size: cover;
   background-position: center;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 .landing {
