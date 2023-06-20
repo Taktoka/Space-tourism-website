@@ -1,0 +1,150 @@
+.Header {
+  height: 130px;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Header .logo {
+  width: 48px;
+  height: 48px;
+  margin-left: 60px;
+}
+
+.Navbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(81.5485px);
+  padding: 20px;
+  justify-content: center;
+  width: 60%;
+  gap: 30px;
+  height: 70px;
+}
+
+.Navbar::after {
+  position: absolute;
+  content: "";
+  width: 370px;
+  height: 1px;
+  top: 50%;
+  left: -350px;
+  background-color: #3f4043;
+  transition: all 0.3s;
+}
+.Navbar li {
+  padding: 0 5px;
+  position: relative;
+}
+.Navbar li a {
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+
+.Navbar li a::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 0%;
+  left: 0;
+  bottom: -25px;
+  background-color: #fff;
+  transition: all 0.3s linear;
+}
+
+.Navbar li a:hover::after {
+  background-color: var(--hover-color);
+  width: 100%;
+}
+
+.Navbar li a.active::after {
+  width: 100%;
+  background-color: #fff;
+}
+
+.Navbar li span {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: bold;
+  margin-right: 5px;
+}
+.toggle-menu {
+  position: fixed;
+  right: -247px;
+  top: 0;
+  height: 100%;
+  width: 250px;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(81.5485px);
+  padding: 20px;
+  z-index: 999;
+  transition: all 0.5s;
+}
+.toggle-menu.hide {
+  right: -247px;
+}
+.toggle-menu.show {
+  right: 0;
+}
+
+.toggle-menu .close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  font-size: 30px;
+  cursor: pointer;
+  color: #d2d8f9;
+}
+
+.toggle-menu .toggle-links {
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.toggle-menu .toggle-links li {
+  margin: 50px 0;
+}
+.toggle-menu li a {
+  color: #d2d8f9;
+  letter-spacing: 1px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.toggle-menu .toggle-links span {
+  color: #fff;
+}
+
+.toggle-icon {
+  font-size: 37px;
+  cursor: pointer;
+  position: absolute;
+  top: 47px;
+  right: 32px;
+  display: none;
+  transition: all 0.3s;
+}
+
+@media (max-width: 767px) {
+  .Header {
+    height: 100px;
+  }
+  .toggle-icon {
+    display: block;
+    top: 28px;
+  }
+  .Navbar {
+    display: none;
+  }
+}
+@media (max-width: 991px) {
+  .Navbar::after {
+    display: none;
+  }
+  .Navbar li a.active::after {
+    display: none;
+  }
+}

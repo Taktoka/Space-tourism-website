@@ -1,0 +1,141 @@
+.crew {
+  background-image: url("/public/images/background-crew-desktop.jpg");
+  min-height: 100vh;
+  background-position: center;
+}
+.crew .contents {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.crew .info {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-top: 65px;
+}
+.crew .info .role {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 400;
+  color: #85868b;
+  font-family: "Bellefair", serifs;
+}
+.crew .info .crew-name {
+  font-family: "Bellefair", serifs;
+  text-transform: uppercase;
+  margin: 15px 0;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 40px;
+}
+
+.crew .info .bio {
+  line-height: 1.5;
+  height: 100px;
+  width: 350px;
+  font-weight: 100;
+  color: #d2d8f9;
+}
+
+.crew .links {
+  display: flex;
+  gap: 10px;
+  margin-top: 80px;
+}
+.crew .contents .links .link,
+.crew .contents .links .active {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #85868b;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.crew .contents .links .active {
+  background-color: #fff;
+}
+.crew .crew.image {
+  position: relative;
+}
+
+.crew .crew-image img {
+  padding-bottom: 10px;
+  position: absolute;
+  max-width: 100%;
+  max-height: 400px;
+  top: 190px;
+  left: 55%;
+  padding-bottom: 0;
+  animation: opacity 1s linear 1;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 991px) {
+  .crew .contents {
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 600px;
+  }
+  .crew .title {
+    font-size: 25px;
+  }
+  .crew .crew-image img {
+    top: 50%;
+    left: 50%;
+    max-height: 330px;
+    transform: translate(-50%, 69%);
+  }
+  .crew .info .bio {
+    text-align: center;
+  }
+
+  .crew .info {
+    align-items: center;
+    position: relative;
+    top: -35px;
+  }
+
+  .crew .links {
+    margin-top: 15px;
+  }
+
+  .crew .info .crew-name {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .crew .crew-image img {
+    max-height: 300px;
+    transform: translate(-50%, 72%);
+  }
+
+  .crew .title {
+    font-size: 25px;
+    margin: 20px auto;
+  }
+
+  .crew .info .crew-name {
+    font-size: 21px;
+    width: 250px;
+    text-align: center;
+  }
+  .crew .info .bio {
+    text-align: center;
+  }
+}
+@media (max-width: 559px) {
+}

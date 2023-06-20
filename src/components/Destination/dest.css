@@ -1,0 +1,143 @@
+.des {
+  background-image: url("/public/images/background-destination-desktop.jpg");
+  background-position: center;
+  min-height: 100vh;
+}
+.des .contents {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 600px;
+}
+
+.des .planet-image {
+  text-align: center;
+}
+
+.des .planet-image img {
+  width: 380px;
+  animation: rotate-planet 120s linear infinite;
+}
+
+.des .info .links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 35px;
+}
+
+.des .info .link,
+.des .info .active {
+  height: 30px;
+  color: #979797;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #979797;
+  position: relative;
+  transition: all ease-in-out 0.3s;
+}
+
+.des .info .active::after {
+  position: absolute;
+  content: "";
+  top: 25px;
+  left: 0;
+  height: 2px;
+  background-color: #fff;
+  width: 100%;
+}
+
+.des .info .planet-title {
+  font-size: 90px;
+  font-weight: 400;
+  font-family: "Bellefair", serifs;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+.des .info p {
+  color: #979797;
+}
+.des .info .description {
+  color: #d2d8f9;
+  width: 350px;
+  letter-spacing: 1px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.des .avr {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  border-top: 1px solid #3f4043;
+  padding: 15px;
+  gap: 35px;
+}
+.des .avr p {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.des .avr span {
+  font-family: "Bellefair", serifs;
+  display: block;
+  font-size: 18px;
+  color: #fff;
+  margin-top: 10px;
+}
+
+@keyframes rotate-planet {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 991px) {
+  .des .title {
+    font-size: 25px;
+    margin: 25px 150px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .des .contents {
+    flex-direction: column;
+  }
+  .des .planet-image img {
+    width: 250px;
+    margin-bottom: 20px;
+  }
+  .des .info .links {
+    gap: 0;
+    justify-content: space-evenly;
+  }
+  .des .info {
+    text-align: center;
+  }
+  .des .info .planet-title {
+    font-size: 70px;
+    margin: 10px 0;
+  }
+  .des .info .link,
+  .des .info .active {
+    font-size: 17px;
+  }
+  .des .avr {
+    gap: 0;
+    justify-content: space-around;
+    margin-top: 10px;
+  }
+  .des .info .description {
+    font-size: 14px;
+  }
+  .des .title {
+    margin: 30px auto;
+    font-size: 25px;
+    width: fit-content;
+  }
+}
