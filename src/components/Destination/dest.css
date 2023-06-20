@@ -13,10 +13,11 @@
 
 .des .planet-image {
   text-align: center;
+  width: 500px;
 }
 
 .des .planet-image img {
-  width: 380px;
+  max-width: 100%;
   animation: rotate-planet 120s linear infinite;
 }
 
@@ -108,8 +109,11 @@
   .des .contents {
     flex-direction: column;
   }
+  .des .planet-image {
+    width: 300px;
+  }
   .des .planet-image img {
-    width: 250px;
+    max-width: 100%;
     margin-bottom: 20px;
   }
   .des .info .links {
@@ -143,6 +147,9 @@
 }
 
 @media (max-width: 559px) {
+  .des .info .description {
+    width: 260px;
+  }
   .des .info .description {
     width: 260px;
   }

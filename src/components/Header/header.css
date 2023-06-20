@@ -147,4 +147,12 @@
   .Navbar li a.active::after {
     display: none;
   }
+  .logo {
+    margin-left: 25px;
+  }
+}
+@media (max-with: 767px) {
+  .logo {
+    margin-left: 20px;
+  }
 }
