@@ -147,10 +147,16 @@
 }
 
 @media (max-width: 559px) {
+  .des .title {
+    font-size: 20px;
+  }
   .des .info .description {
     width: 260px;
   }
   .des .info .description {
     width: 260px;
+  }
+  .des .planet-image {
+    width: 220px;
   }
 }
